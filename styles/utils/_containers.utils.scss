@@ -1,0 +1,43 @@
+/********************************************** SECTION MISSION **********************************************/
+
+.base_container {
+    max-width: var(--section_max_width);
+    width: 90%;
+    margin: 3rem auto;
+
+    .section--content {
+        margin-right: 1rem;
+
+        p {
+            margin-top: 1rem;
+            font-size: 1.2em;
+        }
+    }
+
+    .section--img {
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.stretched_container {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.1rem 0;
+    color: white;
+}
+
+.two_column_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
+}

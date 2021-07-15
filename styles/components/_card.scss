@@ -1,0 +1,39 @@
+.service_card {
+    width: 100%;
+    border: 1px solid rgba($color: grey, $alpha: 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.8rem;
+
+    .cls-2,
+    .cls-3 {
+        transition: all 0.3s ease;
+    }
+
+    .img {
+        width: 125px;
+
+        svg {
+            width: 7rem;
+        }
+    }
+
+    &:hover {
+        .cls-2 {
+            fill: var(--dark-blue) !important;
+        }
+
+        .cls-3 {
+            stroke: white !important;
+        }
+    }
+
+    h2 {
+        margin: 0 1rem;
+        color: var(--black);
+
+        &:hover {
+            color: var(--green);
+        }
+    }
+}

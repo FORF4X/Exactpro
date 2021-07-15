@@ -1,0 +1,38 @@
+.underline_title {
+    font-size: 2.5em;
+    position: relative;
+    line-height: 68px;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-h6;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 2px;
+        content: "";
+        background: #3f979f;
+    }
+}
+
+.title_center {
+    text-align: center;
+    font-size: 2.5em;
+    position: relative;
+    line-height: 68px;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-h6;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        content: "";
+        background: #3f979f;
+    }
+}
